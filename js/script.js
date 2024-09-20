@@ -66,6 +66,11 @@ function showParticipantDetails(alias) {
 }
 
 
+//Se crea la función de modificar
+function editParticipant(alias) {
+    window.location.href = `edit.html?alias=${alias}`;
+}
+
 // Llama a la función para cargar los datos cuando se cargue la página
 //document.addEventListener('DOMContentLoaded', fetchAndDisplayParticipants);
 document.getElementById('loadButton').addEventListener('click', fetchAndDisplayParticipants);
